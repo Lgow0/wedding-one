@@ -1,10 +1,10 @@
-import Head from 'next/head';
-import Image from 'next/image';
-// import Resepsi from '../public/assets/icons/resepsi.svg';
-import Ring from '../public/assets/icons/ring.svg';
+import Head from 'next/head' 
+import Image from 'next/image' 
+// import Resepsi from '../public/assets/icons/resepsi.svg' 
+import Ring from '../public/assets/icons/ring.svg' 
 
-import Location from '../public/assets/icons/location.svg';
-import Layout from '@/components/layout/Layout';
+import Location from '../public/assets/icons/location.svg' 
+import Layout from '@/components/layout/Layout' 
 
 export default function Home() {
   return (
@@ -43,7 +43,7 @@ export default function Home() {
               <p>
                 “Dan dari tanda-tanda-Nya adalah bahwa Dia 
                 menciptakan bagimu dari pasangan kamu sendiri sehingga kamu dapat 
-                menemukan ketenangan di dalam mereka; dan Dia menempatkan di antara Anda kasih 
+                menemukan ketenangan di dalam mereka  dan Dia menempatkan di antara Anda kasih 
                 sayang dan belas kasihan. Sesungguhnya dalam hal itu ada tanda-tanda bagi 
                 kaum yang berpikir.”
               </p>
@@ -197,5 +197,5 @@ export default function Home() {
         </section>
       </Layout>
     </div>
-  );
+  ) 
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import Home from '../../public/assets/icons/home.svg';
-import Calender from '../../public/assets/icons/calender.svg';
-import Gallery from '../../public/assets/icons/gallery.svg';
-import Chat from '../../public/assets/icons/chat.svg';
+import React from 'react' 
+import Home from '../../public/assets/icons/home.svg' 
+import Calender from '../../public/assets/icons/calender.svg' 
+import Gallery from '../../public/assets/icons/gallery.svg' 
+import Chat from '../../public/assets/icons/chat.svg' 
 
 const Footer = () => {
   return (
@@ -28,7 +28,7 @@ const Footer = () => {
         </ul>
       </div>
     </div>
-  );
-};
+  ) 
+} 
 
-export default Footer;
+export default Footer 
