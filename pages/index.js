@@ -1,16 +1,14 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import Layout from '@/components/Layout/Layout';
 // import Resepsi from '../public/assets/icons/resepsi.svg';
 import Ring from '../public/assets/icons/ring.svg';
 
 import Location from '../public/assets/icons/location.svg';
-import OpenInvite from '@/components/Open';
+import Layout from '@/components/layout/Layout';
 
 export default function Home() {
   return (
     <div>
-      <OpenInvite />
       <Head>
         <title>Wedding Invitation</title>
         <link rel="icon" href="/favicon.ico" />
