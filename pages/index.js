@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Ring from '../public/assets/icons/ring.svg'
 
 import Location from '../public/assets/icons/location.svg'
-import Layout from '@/components/layout/Layout'
+import Layout from '@/component/layout/Layout'
 
 export default function Home() {
   return (
