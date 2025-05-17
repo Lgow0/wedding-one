@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme') 
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   purge: [
@@ -9,7 +9,7 @@ module.exports = {
   ],
   theme: {
     boxShadow: {
-      DEFAULT: '#11130f 0px 14px 20px ',
+      DEFAULT: '#11130f 0px 14px 20px;',
     },
     maxWidth: {
       'screen-2xl': '1440px',
@@ -42,4 +42,4 @@ module.exports = {
   },
   variants: {},
   plugins: [],
-} 
+};
