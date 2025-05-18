@@ -5,6 +5,7 @@ import Ring from '../public/assets/icons/ring.svg'
 
 import Location from '../public/assets/icons/location.svg'
 import Layout from '@/component/layout/Layout'
+import { Fade } from 'react-reveal'
 
 export default function Home() {
   return (
@@ -13,12 +14,14 @@ export default function Home() {
         <title>Wedding Invitation</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+    <Fade bottom duration={2000}>
       <Layout>
         {/* Header Mobile */}
+        <Fade bottom duration={2000}>
         <section
           id="beranda"
           className="flex lg:hidden bg-cover bg-center  w-full h-screen  items-start py-14"
-          style={{ backgroundImage: 'url(/assets/test2.jpg)' }}
+          style={{ backgroundImage: 'url(/assets/ring.png)' }}
           objectFit="cover"
         >
           <div className="flex flex-col  w-full relative">
@@ -32,7 +35,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </Fade>
         {/* End Header Mobile */}
+        <Fade bottom duration={2000}>
         <section
           id="beranda-dekstop"
           className="hidden lg:grid bg-slate-500 py-14 lg:py-0 mb:pb-6 grid-flow-col grid-cols-2 gap-4 row-span-4 h-screen"
@@ -59,7 +64,7 @@ export default function Home() {
           </div>
           <div className="flex w-full relative">
             <Image
-              src="/assets/test2.jpg"
+              src="/assets/ring.png"
               alt="Picture of the author"
               layout="fill"
               objectFit="cover"
@@ -68,7 +73,9 @@ export default function Home() {
             />
           </div>
         </section>
+        </Fade>
         {/* End Header Dekstop */}
+        <Fade bottom duration={2000}>
         <section
           id="resepsi"
           className="bg-dark-500 py-14  mb:pb-6 grid grid-flow-row gap-4 row-span-4 h-screen"
@@ -133,6 +140,8 @@ export default function Home() {
             </button>
           </div>
         </section>
+        </Fade>
+        <Fade bottom duration={2000}>
         <section
           id="gallery"
           className="bg-dark-500 pt-8 md:pt-0 lg:pt-32 pb-24 lg:pb-8 grid grid-flow-row gap-4 grid-rows-7 lg:grid-rows-5 grid-cols-2 lg:grid-cols-3 h-screen px-4 lg:px-8"
@@ -141,19 +150,32 @@ export default function Home() {
             Gallery
           </h1>
           <div className="flex row-span-3 ">
+            {/* Mobile: homepage.jpg */}
             <Image
               src="/assets/homepage.jpg"
               alt="Picture of the author"
+              objectFit="cover"
               width={500}
               height={500}
-              objectFit="cover"
               quality={100}
               loading="lazy"
+              className="block lg:hidden"
+            />
+            {/* Desktop: homeTest.png */}
+            <Image
+              src="/assets/homeTest.png"
+              alt="Picture of the author"
+              objectFit="cover"
+              width={500}
+              height={500}
+              quality={100}
+              loading="lazy"
+              className="hidden lg:block"
             />
           </div>
           <div className="flex  row-start-3 col-start-2 row-span-3 lg:row-span-5 bg-white">
             <Image
-              src="/assets/gallery-mobile/photo-2.png"
+              src="/assets/homepage3.jpg"
               alt="Picture of the author"
               width={500}
               height={500}
@@ -175,7 +197,7 @@ export default function Home() {
           </div>
           <div className="flex row-span-1 lg:row-span-3">
             <Image
-              src="/assets/gallery-mobile/photo-4.png"
+              src="/assets/homepage4.jpg"
               alt="Picture of the author"
               width={500}
               height={500}
@@ -195,7 +217,9 @@ export default function Home() {
             />
           </div>
         </section>
+        </Fade>
       </Layout>
+      </Fade>
     </div>
   )
 }
