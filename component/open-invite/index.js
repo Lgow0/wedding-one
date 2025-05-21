@@ -1,22 +1,22 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import { Fade } from 'react-reveal'
-import {usePathname} from 'next/navigation'
-import { useRouter } from 'next/router'
+import { useRouter} from 'next/router'
 
-const OpenInvite = ({onValidate}) => {
-     const handleClick = () => {
+const OpenInvite = ({onValidate, name}) => {
+    const router = useRouter()
+    
+    const handleClick = () => {
         onValidate()
         router.push('/')
-    }
-    const router = useRouter()
-    const pathname = usePathname()
-    
+    }    
+    name = router.query.name
+
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
             <Fade bottom duration={1000}> 
             <h1 className="text-2xl font-bold mb-4">Open Invite</h1>
-                <p className="text-lg mb-4">{pathname.replace('/', '')} & Partner</p>
+                <p className="text-lg mb-4">{name ? name : 'Guest'} & Partner</p>
                 <Button 
                  onClick={handleClick}
                  className="bg-dark-500 text-white font-font-semibold px-4 py-2 rounded-xl">
@@ -26,5 +26,4 @@ const OpenInvite = ({onValidate}) => {
         </div>
     )
 }
-
 export default OpenInvite
