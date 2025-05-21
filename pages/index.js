@@ -67,7 +67,7 @@ export default function Home() {
               src="/assets/ring.png"
               alt="Picture of the author"
               layout="fill"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -154,7 +154,7 @@ export default function Home() {
             <Image
               src="/assets/homepage.jpg"
               alt="Picture of the author"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               width={500}
               height={500}
               quality={100}
@@ -165,7 +165,7 @@ export default function Home() {
             <Image
               src="/assets/homeTest.png"
               alt="Picture of the author"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               width={500}
               height={500}
               quality={100}
@@ -179,7 +179,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -190,7 +190,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -201,7 +201,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -211,7 +211,7 @@ export default function Home() {
               src="/assets/gallery-mobile/photo-5.png"
               alt="Picture of the author"
               layout="fill"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
