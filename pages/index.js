@@ -14,10 +14,10 @@ export default function Home() {
         <title>Wedding Invitation</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <Fade bottom duration={2000}>
+    <Fade bottom duration={2500}>
       <Layout>
         {/* Header Mobile */}
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={2500}>
         <section
           id="beranda"
           className="flex lg:hidden bg-cover bg-center  w-full h-screen  items-start py-14"
@@ -37,7 +37,7 @@ export default function Home() {
         </section>
         </Fade>
         {/* End Header Mobile */}
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={2500}>
         <section
           id="beranda-dekstop"
           className="hidden lg:grid bg-slate-500 py-14 lg:py-0 mb:pb-6 grid-flow-col grid-cols-2 gap-4 row-span-4 h-screen"
@@ -67,7 +67,7 @@ export default function Home() {
               src="/assets/ring.png"
               alt="Picture of the author"
               layout="fill"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -75,7 +75,7 @@ export default function Home() {
         </section>
         </Fade>
         {/* End Header Dekstop */}
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={2500}>
         <section
           id="resepsi"
           className="bg-dark-500 py-14  mb:pb-6 grid grid-flow-row gap-4 row-span-4 h-screen"
@@ -141,7 +141,7 @@ export default function Home() {
           </div>
         </section>
         </Fade>
-        <Fade bottom duration={2000}>
+        <Fade bottom duration={2500}>
         <section
           id="gallery"
           className="bg-dark-500 pt-8 md:pt-0 lg:pt-32 pb-24 lg:pb-8 grid grid-flow-row gap-4 grid-rows-7 lg:grid-rows-5 grid-cols-2 lg:grid-cols-3 h-screen px-4 lg:px-8"
@@ -154,7 +154,7 @@ export default function Home() {
             <Image
               src="/assets/homepage.jpg"
               alt="Picture of the author"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               width={500}
               height={500}
               quality={100}
@@ -165,7 +165,7 @@ export default function Home() {
             <Image
               src="/assets/homeTest.png"
               alt="Picture of the author"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               width={500}
               height={500}
               quality={100}
@@ -179,7 +179,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -190,7 +190,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -201,7 +201,7 @@ export default function Home() {
               alt="Picture of the author"
               width={500}
               height={500}
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
@@ -211,7 +211,7 @@ export default function Home() {
               src="/assets/gallery-mobile/photo-5.png"
               alt="Picture of the author"
               layout="fill"
-              objectFit="cover"
+              style={{ objectFit: "cover" }}
               quality={100}
               loading="lazy"
             />
