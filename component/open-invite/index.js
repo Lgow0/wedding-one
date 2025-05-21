@@ -3,14 +3,23 @@ import { Button } from '@/components/ui/button'
 import { Fade } from 'react-reveal'
 import { useRouter} from 'next/router'
 
-const OpenInvite = ({onValidate, name}) => {
+const OpenInvite = ({onValidate, name:initialName}) => {
     const router = useRouter()
-    
+    const [name, setName] = React.useState(initialName)
+
     const handleClick = () => {
-        onValidate()
+        if (typeof onValidate === "function") {
+            onValidate()
+        } else {
+            console.error("onValidate is not a function")
+        }
         router.push('/')
-    }    
-    name = router.query.name
+    }       
+    React.useEffect(() => {
+        if (router.query.name) {
+            setName(router.query.name)
+        }
+    }, [router.query.name])
 
     return (
         <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
@@ -26,4 +35,5 @@ const OpenInvite = ({onValidate, name}) => {
         </div>
     )
 }
+
 export default OpenInvite

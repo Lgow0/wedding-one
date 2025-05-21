@@ -7,10 +7,15 @@ export default function InvitePage() {
     const router = useRouter()
 
     React.useEffect(() => {
-    const { name } = router.query
-        
-    if (name) {setName(name)}
-    }, [])
+        const { name } = router.query
+        if (name) { 
+            setName(name)
+        }
+    }, [router.query])
     
-    return <OpenInvite name={name} />
+    const onValidate = () => {
+        console.debug("onValidate")
+    }
+    
+    return <OpenInvite name={name} onValidate={onValidate}/>
 }
